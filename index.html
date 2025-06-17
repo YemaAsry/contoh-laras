@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coffee Shop</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Laras <span>Cookie</span></h1>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Our Story</a>
+        <a href="#">Contact</a>
+        <button class="btn">Sign In</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content animate">
+      <h2>LarasCoockies to Perfection.</h2>
+      <p>Specialty coffee crafted with passion and precision.</p>
+      <button class="btn-primary" id="orderBtn">Order Coffee</button>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories">
+    <div class="category-card animate">
+      <img src="donat.jpg" alt="Organic Beans"/>
+      <h3>Donat Special</h3>
+    </div>
+    <div class="category-card animate delay">
+      <img src="mm.jpg" alt="Iced Favorites"/>
+      <h3>All Varian Roti</h3>
+    </div>
+    <div class="category-card animate delay-2">
+      <img src="ayp.jpg" alt="Espresso Masterpieces"/>
+      <h3>Kue Basah</h3>
+    </div>
+  </section>
+
+  <!-- Daily Deal -->
+  <section class="daily-deal">
+    <h2>Daily Deal</h2>
+    <p>Free cookie with any espresso order, today only!</p>
+    <button class="btn-primary">View Deal</button>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <h2>Our Coffee Shop</h2>
+    <p>We blend quality beans, expert baristas, and cozy spaces to bring you the perfect cup every time.</p>
+  </section>
+<!-- Form Pemesanan -->
+<section class="order-section">
+  <h2>Order Your Coffee</h2>
+  <form id="orderForm">
+    <label>Choose Drink:</label>
+    <select name="drink" required>
+      <option value="Espresso">Espresso</option>
+      <option value="Latte">Latte</option>
+      <option value="Iced Coffee">Iced Coffee</option>
+    </select>
+    <label>Your Name:</label>
+    <input type="text" name="name" required />
+    <button type="submit" class="btn-primary">Submit Order</button>
+  </form>
+  <p id="orderStatus"></p>
+</section>
+
+<!-- Filter Menu -->
+<section class="menu-filter">
+  <h2>Our Menu</h2>
+  <div class="filter-buttons">
+    <button onclick="filterMenu('all')">All</button>
+    <button onclick="filterMenu('hot')">Hot</button>
+    <button onclick="filterMenu('iced')">Iced</button>
+    <button onclick="filterMenu('beans')">Beans</button>
+  </div>
+  <div class="menu-items" id="menuItems">
+    <div class="item hot">Hot Latte</div>
+    <div class="item iced">Iced Mocha</div>
+    <div class="item beans">Arabica Beans</div>
+    <div class="item hot">Espresso</div>
+  </div>
+</section>
+
+<!-- Galeri -->
+<section class="gallery">
+  <h2>Our Gallery</h2>
+  <div class="gallery-grid">
+    <img src="app.jpg" alt="Gallery 1" />
+    <img src="qq.jpg" alt="Gallery 2" />
+    <img src="ww.jpg" alt="Gallery 3" />
+  </div>
+</section>
+<!-- Lokasi Coffee Shop -->
+<section class="location-section">
+  <h2>📍 Lokasi Kami</h2>
+  <p>Kunjungi kami langsung atau buka di Google Maps.</p>
+  
+  <div class="location-embed">
+    <iframe
+      src="https://www.google.com/maps?q=-6.200000,106.816666&hl=id&z=15&output=embed"
+      width="100%"
+      height="400"
+      style="border:2px solid #D4AF37; border-radius:12px;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+
+  <p>
+    <a class="btn-map" href="https://www.google.com/maps?q=-6.200000,106.816666" target="_blank">
+      Buka di Google Maps
+    </a>
+  </p>
+</section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Coffee Shop. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
